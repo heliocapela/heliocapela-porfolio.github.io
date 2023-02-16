@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.style.css">
+    <title>login page</title>
+</head>
+<body>
+
+<div class=""> 
+        <form action="" class="form">
+
+            <h2 class=""> Autentication</h2>
+
+            <div class="input-group">
+                <h5>User name</h5>
+                <acronym title="admin"><input type="text" name="loginadmin" placeholder="admin" id="LoginAdmin" required/> </acronym>
+        </div>
+
+        <div class="input-group">
+            <h5>User password</h5>
+                <acronym title="admin"><input type="text" name="loginPassword" placeholder="admin" id="loginPassword" required/> </acronym>            </div>
+        
+                <button type="submit" value="login" class="submit-btn" onclick="auth()"/>Login</button>
+        </form>
+    </div>
+    <script> 
+      function auth(){
+    var user = document.getElementById("LoginAdmin").value;
+    var password = document.getElementById("loginPassword").value;
+
+    if (user == "admin" && password == "admin"){
+    window.location.assign("http://127.0.0.1:5500/CodingChallenge_IV_TodoList/ToDoList.index.Html");
+    alert("Login successful");
+    }
+else {
+    alert("your credentials are incorrect, please try again");
+    return
+    }
+  }
+    </script>
+</body>
+</html>

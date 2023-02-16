@@ -1,0 +1,10 @@
+body{
+    background-color: rgba(37, 247, 100, 0.582);
+}
+
+#login-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+

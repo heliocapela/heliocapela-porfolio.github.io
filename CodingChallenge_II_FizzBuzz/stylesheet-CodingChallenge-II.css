@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(104, 238, 133, 0.616);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, 
+div {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+input, 
+button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+button {
+    color: rgb(39, 39, 38);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;
+}
+
+
+button:hover {
+    color: white;
+    background: rgb(0, 204, 255);
+}
+
